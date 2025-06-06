@@ -1,0 +1,30 @@
+[SupersonicTheme]
+Name = "Catppuccin Macchiato (Rosewater)"
+Version = "0.2"
+SupportsDark = true
+SupportsLight = false
+
+[DarkColors]
+PageBackground = "#24273AFF"
+ListHeader = "#181926FF"
+PageHeader = "#1E2030FF"
+Background = "#181926FF"
+Button = "#494D64FF"
+DisabledButton = "#1E2030FF"
+Disabled = "#494D64FF"
+Error = "#ED8796FF"
+Focus = "#6E738DFF"
+Foreground = "#CAD3F5FF"
+Hover = "#6E738DFF"
+Hyperlink = "#F4DBD6FF"
+InputBackground = "#494D64FF"
+InputBorder = "#B7BDF8FF"
+MenuBackground = "#363A4FFF"
+OverlayBackground = "#5B6078FF"
+Pressed = "#F4DBD6FF"
+Primary = "#F4DBD6FF"
+ScrollBar = "#8087A2FF"
+Selection = "#1E2030FF"
+Separator = "#494D64FF"
+Success = "#A6DA95FF"
+Warning = "#F5A97FFF"

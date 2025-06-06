@@ -1,0 +1,30 @@
+[SupersonicTheme]
+Name = "Catppuccin Frappé (Rosewater)"
+Version = "0.2"
+SupportsDark = true
+SupportsLight = false
+
+[DarkColors]
+PageBackground = "#303446FF"
+ListHeader = "#232634FF"
+PageHeader = "#292C3CFF"
+Background = "#232634FF"
+Button = "#51576DFF"
+DisabledButton = "#292C3CFF"
+Disabled = "#51576DFF"
+Error = "#E78284FF"
+Focus = "#737994FF"
+Foreground = "#C6D0F5FF"
+Hover = "#737994FF"
+Hyperlink = "#F2D5CFFF"
+InputBackground = "#51576DFF"
+InputBorder = "#BABBF1FF"
+MenuBackground = "#414559FF"
+OverlayBackground = "#626880FF"
+Pressed = "#F2D5CFFF"
+Primary = "#F2D5CFFF"
+ScrollBar = "#838BA7FF"
+Selection = "#292C3CFF"
+Separator = "#51576DFF"
+Success = "#A6D189FF"
+Warning = "#EF9F76FF"

@@ -1,0 +1,30 @@
+[SupersonicTheme]
+Name = "Catppuccin Mocha (Lavender)"
+Version = "0.2"
+SupportsDark = true
+SupportsLight = false
+
+[DarkColors]
+PageBackground = "#1E1E2EFF"
+ListHeader = "#11111BFF"
+PageHeader = "#181825FF"
+Background = "#11111BFF"
+Button = "#45475AFF"
+DisabledButton = "#181825FF"
+Disabled = "#45475AFF"
+Error = "#F38BA8FF"
+Focus = "#6C7086FF"
+Foreground = "#CDD6F4FF"
+Hover = "#6C7086FF"
+Hyperlink = "#B4BEFEFF"
+InputBackground = "#45475AFF"
+InputBorder = "#B4BEFEFF"
+MenuBackground = "#313244FF"
+OverlayBackground = "#585B70FF"
+Pressed = "#B4BEFEFF"
+Primary = "#B4BEFEFF"
+ScrollBar = "#7F849CFF"
+Selection = "#181825FF"
+Separator = "#45475AFF"
+Success = "#A6E3A1FF"
+Warning = "#FAB387FF"

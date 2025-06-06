@@ -1,0 +1,44 @@
+---
+whiskers:
+  version: 2.5.1
+  matrix:
+    - flavor
+    - accent
+  filename: "themes/{{ flavor.identifier }}/catppuccin-{{flavor.identifier}}-{{ accent }}.toml"
+  hex_format: "#{{R}}{{G}}{{B}}{{A}}"
+---
+{%- set palette = flavor.colors -%}
+[SupersonicTheme]
+Name = "Catppuccin {{ flavor.name }} ({{ flavor.colors[accent].name }})"
+Version = "0.2"
+SupportsDark = {{ flavor.dark }}
+SupportsLight = {{ flavor.light }}
+
+{% if flavor.dark -%}
+[DarkColors]
+{%- else -%}
+[LightColors]
+{%- endif %}
+PageBackground = "{{ base.hex }}"
+ListHeader = "{{ crust.hex }}"
+PageHeader = "{{ mantle.hex }}"
+Background = "{{ crust.hex }}"
+Button = "{{ surface1.hex }}"
+DisabledButton = "{{ mantle.hex }}"
+Disabled = "{{ surface1.hex }}"
+Error = "{{ red.hex }}"
+Focus = "{{ overlay0.hex }}"
+Foreground = "{{ text.hex }}"
+Hover = "{{ overlay0.hex }}"
+Hyperlink = "{{ palette[accent].hex }}"
+InputBackground = "{{ surface1.hex }}"
+InputBorder = "{{ lavender.hex }}"
+MenuBackground = "{{ surface0.hex }}"
+OverlayBackground = "{{ surface2.hex }}"
+Pressed = "{{ palette[accent].hex }}"
+Primary = "{{ palette[accent].hex }}"
+ScrollBar = "{{ overlay1.hex }}"
+Selection = "{{ mantle.hex }}"
+Separator = "{{ surface1.hex }}"
+Success = "{{ green.hex }}"
+Warning = "{{ peach.hex }}"
