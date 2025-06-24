@@ -1,8 +1,42 @@
+
 [SupersonicTheme]
 Name = "Catppuccin Macchiato (Peach)"
 Version = "0.2"
 SupportsDark = true
-SupportsLight = false
+SupportsLight = true
+
+
+[LightColors]
+PageBackground = "#EFF1F5FF"
+ListHeader = "#DCE0E8FF"
+PageHeader = "#E6E9EFFF"
+Background = "#DCE0E8FF"
+Button = "#E6E9EFFF"
+DisabledButton = "#CCD0DAFF"
+Disabled = "#4C4F69FF"
+Error = "#D20F39FF"
+Focus = "#F2D5C6FF"
+Foreground = "#4C4F69FF"
+ForegroundOnError = "#EFF1F5FF"
+ForegroundOnPrimary = "#EFF1F5FF"
+ForegroundOnSuccess = "#EFF1F5FF"
+ForegroundOnWarning = "#EFF1F5FF"
+HeaderBackground = "#CCD0DAFF"
+Hover = "#F1E3DEFF"
+Hyperlink = "#FE640BFF"
+InputBackground = "#E6E9EFFF"
+InputBorder = "#CCD0DAFF"
+MenuBackground = "#E6E9EFFF"
+OverlayBackground = "#E6E9EFFF"
+Placeholder = "#7C7F93FF"
+Pressed = "#CCD0DA66"
+Primary = "#FE640BFF"
+ScrollBar = "#E6E9EF99"
+Selection = "#F3CEBBFF"
+Separator = "#DCE0E8FF"
+Success = "#40A02BFF"
+Warning = "#DF8E1DFF"
+
 
 [DarkColors]
 PageBackground = "#24273AFF"

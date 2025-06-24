@@ -1,8 +1,42 @@
+
 [SupersonicTheme]
 Name = "Catppuccin Mocha (Pink)"
 Version = "0.2"
 SupportsDark = true
-SupportsLight = false
+SupportsLight = true
+
+
+[LightColors]
+PageBackground = "#EFF1F5FF"
+ListHeader = "#DCE0E8FF"
+PageHeader = "#E6E9EFFF"
+Background = "#DCE0E8FF"
+Button = "#E6E9EFFF"
+DisabledButton = "#CCD0DAFF"
+Disabled = "#4C4F69FF"
+Error = "#D20F39FF"
+Focus = "#EED9EDFF"
+Foreground = "#4C4F69FF"
+ForegroundOnError = "#EFF1F5FF"
+ForegroundOnPrimary = "#EFF1F5FF"
+ForegroundOnSuccess = "#EFF1F5FF"
+ForegroundOnWarning = "#EFF1F5FF"
+HeaderBackground = "#CCD0DAFF"
+Hover = "#EFE5F1FF"
+Hyperlink = "#EA76CBFF"
+InputBackground = "#E6E9EFFF"
+InputBorder = "#CCD0DAFF"
+MenuBackground = "#E6E9EFFF"
+OverlayBackground = "#E6E9EFFF"
+Placeholder = "#7C7F93FF"
+Pressed = "#CCD0DA66"
+Primary = "#EA76CBFF"
+ScrollBar = "#E6E9EF99"
+Selection = "#EED3EBFF"
+Separator = "#DCE0E8FF"
+Success = "#40A02BFF"
+Warning = "#DF8E1DFF"
+
 
 [DarkColors]
 PageBackground = "#1E1E2EFF"
