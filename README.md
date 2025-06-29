@@ -6,9 +6,9 @@
 </h3>
 
 <p align="center">
-	<a href="https://github.com/Chippit/supersonic/stargazers"><img src="https://img.shields.io/github/stars/Chippit/supersonic?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
-	<a href="https://github.com/Chippit/supersonic/issues"><img src="https://img.shields.io/github/issues/Chippit/supersonic?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
-	<a href="https://github.com/Chippit/supersonic/contributors"><img src="https://img.shields.io/github/contributors/Chippit/supersonic?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/supersonic/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/supersonic?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/supersonic/issues"><img src="https://img.shields.io/github/issues/catppuccin/supersonic?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/supersonic/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/supersonic?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
 <p align="center">
@@ -36,7 +36,7 @@
 
 ## Usage
 
-1. Download the flavor of your choice.
+1. Download the flavor + accent combination of your choice from the [themes](./themes) directory.
 > [!NOTE]
 > Latte is included in all flavors as their light mode variant.
 2. Place the downloaded theme file into your [theme directory](https://github.com/dweymouth/supersonic/wiki/Custom-Themes).
