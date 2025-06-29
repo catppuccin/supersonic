@@ -37,9 +37,11 @@
 ## Usage
 
 1. Download the flavor of your choice.
+> [!NOTE]
+> Latte is included in all flavors as their light mode variant.
 2. Place the downloaded theme file into your [theme directory](https://github.com/dweymouth/supersonic/wiki/Custom-Themes).
 3. In Supersonic, navigate to **Settings...** -> **Appearance** -> **Theme**, and select your chosen theme.
-4. Make sure to set **Mode** to **Dark** or **Light** depending on your chosen theme.
+4. Set **Mode** to **Dark** to use your chosen theme, or **Light** to use Latte.
 
 ## 💝 Thanks to
 

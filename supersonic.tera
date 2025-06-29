@@ -2,43 +2,58 @@
 whiskers:
   version: 2.5.1
   matrix:
-    - flavor
+    - flavor: ["frappe", "macchiato", "mocha"]
     - accent
   filename: "themes/{{ flavor.identifier }}/catppuccin-{{flavor.identifier}}-{{ accent }}.toml"
   hex_format: "#{{R}}{{G}}{{B}}{{A}}"
 ---
-{%- set palette = flavor.colors -%}
+
 [SupersonicTheme]
 Name = "Catppuccin {{ flavor.name }} ({{ flavor.colors[accent].name }})"
 Version = "0.2"
-SupportsDark = {{ flavor.dark }}
-SupportsLight = {{ flavor.light }}
+SupportsDark = true
+SupportsLight = true
+{%- set modes = ["light", "dark"] -%}
+{%- for mode in modes %}
 
-{% if flavor.dark -%}
+{% if mode == "dark" -%}
+{%- set palette = flavor.colors %}
 [DarkColors]
-{%- else -%}
+{% else %}
 [LightColors]
-{%- endif %}
-PageBackground = "{{ base.hex }}"
-ListHeader = "{{ crust.hex }}"
-PageHeader = "{{ mantle.hex }}"
-Background = "{{ crust.hex }}"
-Button = "{{ surface1.hex }}"
-DisabledButton = "{{ mantle.hex }}"
-Disabled = "{{ surface1.hex }}"
-Error = "{{ red.hex }}"
-Focus = "{{ overlay0.hex }}"
-Foreground = "{{ text.hex }}"
-Hover = "{{ overlay0.hex }}"
-Hyperlink = "{{ palette[accent].hex }}"
-InputBackground = "{{ surface1.hex }}"
-InputBorder = "{{ lavender.hex }}"
-MenuBackground = "{{ surface0.hex }}"
-OverlayBackground = "{{ surface2.hex }}"
-Pressed = "{{ palette[accent].hex }}"
-Primary = "{{ palette[accent].hex }}"
-ScrollBar = "{{ overlay1.hex }}"
-Selection = "{{ mantle.hex }}"
-Separator = "{{ surface1.hex }}"
-Success = "{{ green.hex }}"
-Warning = "{{ peach.hex }}"
+{% set palette = flavors["latte"].colors -%}
+{%- endif -%}
+
+{%- set accentcolor = palette[accent] -%}
+
+PageBackground = "{{ palette.base.hex }}"
+ListHeader = "{{ palette.crust.hex }}"
+PageHeader = "{{ palette.mantle.hex }}"
+Background = "{{ palette.crust.hex }}"
+Button = "{{ palette.mantle.hex }}"
+DisabledButton = "{{ palette.surface0.hex }}"
+Disabled = "{{ palette.text.hex }}"
+Error = "{{ palette.red.hex }}"
+Focus = "{{ palette.base | mix(color=accentcolor, amount=0.80) | get(key="hex") }}"
+Foreground = "{{ palette.text.hex }}"
+ForegroundOnError = "{{ palette.base.hex }}"
+ForegroundOnPrimary = "{{ palette.base.hex }}"
+ForegroundOnSuccess = "{{ palette.base.hex }}"
+ForegroundOnWarning = "{{ palette.base.hex }}"
+HeaderBackground = "{{ palette.surface0.hex }}"
+Hover = "{{ palette.base | mix(color=accentcolor, amount=0.90) | get(key="hex") }}"
+Hyperlink = "{{ accentcolor.hex }}"
+InputBackground = "{{ palette.mantle.hex }}"
+InputBorder = "{{ palette.surface0.hex }}"
+MenuBackground = "{{ palette.mantle.hex }}"
+OverlayBackground = "{{ palette.mantle.hex }}"
+Placeholder = "{{ palette.overlay2.hex }}"
+Pressed = "{{ palette.surface0 | mod(opacity=0.40) | get(key="hex") }}"
+Primary = "{{ accentcolor.hex }}"
+ScrollBar = "{{ palette.mantle | mod(opacity=0.60) | get(key="hex") }}"
+Selection = "{{ palette.base | mix(color=accentcolor, amount=0.75) | get(key="hex") }}"
+Separator = "{{ palette.crust.hex }}"
+Success = "{{ palette.green.hex }}"
+Warning = "{{ palette.yellow.hex }}"
+
+{%- endfor %}
